@@ -49,20 +49,46 @@ export default function Home() {
         </header>
 
         <main className="mx-auto w-full max-w-6xl px-6 pb-24 pt-10">
-          <section className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
-            <div>
-              <p className="inline-flex items-center gap-2 rounded-full border border-[var(--line)] bg-[var(--card)] px-4 py-1 text-xs uppercase tracking-[0.2em] text-[var(--muted)]">
-                Lightspeed MVP delivery
-              </p>
+          <section className="text-center">
+            <div className="mx-auto flex max-w-3xl flex-col items-center">
+              <span className="inline-flex items-center gap-2 rounded-full border border-[var(--line)] bg-[var(--card)] px-4 py-1 text-xs font-semibold text-[var(--muted)]">
+                New
+                <span className="text-[var(--ink)]">
+                  15-day MVP sprints for startups
+                </span>
+              </span>
               <h1 className="mt-6 text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">
-                Ship your startup MVP in 15 days.
+                Lightspeed MVPs that get to market fast.
               </h1>
-              <p className="mt-6 max-w-xl text-base leading-7 text-[var(--muted)]">
-                Thisaivi partners with early-stage teams to design, build, and
-                launch production-ready MVPs fast. Clear scope, rapid sprints,
-                and a 15-day delivery window.
+              <p className="mt-6 max-w-2xl text-base leading-7 text-[var(--muted)]">
+                Thisaivi designs, builds, and ships production-ready MVPs in 15
+                days. Focused scope, rapid delivery, and a launch plan that
+                keeps momentum high.
               </p>
-              <div className="mt-8 flex flex-wrap items-center gap-4">
+              <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
+                <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--muted)]">
+                  Services
+                </span>
+                <div className="flex flex-wrap items-center justify-center gap-4 text-xs text-[var(--muted)]">
+                  <span className="inline-flex items-center gap-2">
+                    <span className="h-2 w-2 rounded-full bg-[var(--accent)]" />
+                    App development
+                  </span>
+                  <span className="inline-flex items-center gap-2">
+                    <span className="h-2 w-2 rounded-full bg-[var(--accent-2)]" />
+                    E-commerce
+                  </span>
+                  <span className="inline-flex items-center gap-2">
+                    <span className="h-2 w-2 rounded-full bg-[var(--ink)]" />
+                    Branding
+                  </span>
+                  <span className="inline-flex items-center gap-2">
+                    <span className="h-2 w-2 rounded-full bg-[var(--muted)]" />
+                    Landing sites
+                  </span>
+                </div>
+              </div>
+              <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
                 <button className="rounded-full bg-[var(--accent)] px-6 py-3 text-sm font-semibold text-white transition hover:translate-y-[-1px]">
                   Book a kickoff call
                 </button>
@@ -70,46 +96,73 @@ export default function Home() {
                   See the process
                 </button>
               </div>
-              <div className="mt-10 flex flex-wrap gap-3 text-xs text-[var(--muted)]">
-                <span className="rounded-full border border-[var(--line)] px-3 py-1">
-                  Delivery in 15 days
-                </span>
-                <span className="rounded-full border border-[var(--line)] px-3 py-1">
-                  Startup-first scope
-                </span>
-                <span className="rounded-full border border-[var(--line)] px-3 py-1">
-                  Design + build included
-                </span>
-              </div>
+              <p className="mt-4 text-xs text-[var(--muted)]">
+                Delivery in 15 days. Design, build, and launch included.
+              </p>
             </div>
+          </section>
 
-            <div className="rounded-3xl border border-[var(--line)] bg-[var(--card)] p-6 shadow-[0_20px_80px_rgba(15,29,27,0.08)]">
-              <div className="flex items-center justify-between text-xs text-[var(--muted)]">
-                <span>Live run</span>
-                <span>07:42 AM</span>
+          <section className="mt-16">
+            <div className="relative overflow-hidden rounded-3xl border border-[var(--line)] px-6 py-10 md:px-10">
+              <div className="max-w-3xl">
+                <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">
+                  Built for founders and teams
+                </p>
+                <h2 className="mt-4 text-3xl font-semibold leading-tight sm:text-4xl">
+                  Thisaivi helps you ship MVPs faster and grow your launch
+                  momentum.
+                </h2>
+                <p className="mt-4 text-sm text-[var(--muted)]">
+                  Whether you are validating a new idea or accelerating a
+                  roadmap, we keep delivery tight with a 15-day timeline and
+                  weekly demos.
+                </p>
               </div>
-              <div className="mt-6 space-y-4">
-                {[
-                  "Synthesizing ICP from CRM notes",
-                  "Ranking 120 accounts by intent",
-                  "Drafting tailored email sequence",
-                  "Queueing LinkedIn touchpoints",
-                  "Waiting on approval for launch",
-                ].map((item, index) => (
-                  <div
-                    key={item}
-                    className="flex items-start gap-3 rounded-2xl border border-[var(--line)] bg-white/70 px-4 py-3"
-                  >
-                    <span className="mt-1 h-2 w-2 rounded-full bg-[var(--accent-2)]" />
-                    <div>
-                      <p className="text-sm font-medium">Step {index + 1}</p>
-                      <p className="text-xs text-[var(--muted)]">{item}</p>
-                    </div>
-                  </div>
-                ))}
+              <div className="mt-10 grid gap-8 md:grid-cols-3">
+                <div className="border-l border-[var(--line)] pl-6">
+                  <p className="text-2xl font-semibold">15 days</p>
+                  <p className="mt-2 text-xs text-[var(--muted)]">
+                    MVP delivery window
+                  </p>
+                </div>
+                <div className="border-l border-[var(--line)] pl-6">
+                  <p className="text-2xl font-semibold">4 core</p>
+                  <p className="mt-2 text-xs text-[var(--muted)]">
+                    Services included
+                  </p>
+                </div>
+                <div className="border-l border-[var(--line)] pl-6">
+                  <p className="text-2xl font-semibold">Weekly</p>
+                  <p className="mt-2 text-xs text-[var(--muted)]">
+                    Demo + feedback loop
+                  </p>
+                </div>
               </div>
-              <div className="mt-6 rounded-2xl bg-[var(--ink)] px-4 py-3 text-xs text-[var(--canvas)]">
-                Next check-in in 2h. Approval pending.
+              <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32">
+                <svg
+                  viewBox="0 0 1200 240"
+                  className="h-full w-full"
+                  preserveAspectRatio="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M0 220 C 200 210, 300 200, 420 180 C 560 150, 640 120, 780 90 C 900 65, 1020 35, 1200 20"
+                    fill="none"
+                    stroke="rgba(15, 29, 27, 0.25)"
+                    strokeWidth="2"
+                  />
+                  {Array.from({ length: 9 }).map((_, index) => (
+                    <line
+                      key={`grid-${index}`}
+                      x1={80 + index * 120}
+                      y1={240}
+                      x2={80 + index * 120}
+                      y2={0}
+                      stroke="rgba(15, 29, 27, 0.12)"
+                      strokeDasharray="4 6"
+                    />
+                  ))}
+                </svg>
               </div>
             </div>
           </section>
@@ -270,6 +323,60 @@ export default function Home() {
                 <div className="mt-8 border-t border-white/20 pt-6 text-xs text-[var(--canvas)]/70">
                   Delivery in 15 days. Flexible add-ons available.
                 </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="faq" className="mt-24">
+            <div className="rounded-3xl border border-[var(--line)] bg-[var(--card)] px-6 py-10 md:px-10">
+              <div className="max-w-2xl">
+                <span className="inline-flex items-center rounded-full border border-[var(--line)] bg-white px-3 py-1 text-xs font-semibold text-[var(--muted)]">
+                  FAQ
+                </span>
+                <h2 className="mt-4 text-3xl font-semibold">
+                  Common questions
+                </h2>
+                <p className="mt-2 text-sm text-[var(--muted)]">
+                  The essentials you need before starting a 15-day sprint.
+                </p>
+              </div>
+              <div className="mt-8 divide-y divide-[var(--line)]">
+                {[
+                  {
+                    q: "What do you need to start?",
+                    a: "A clear goal, target users, and any existing assets. We handle the rest in the kickoff call.",
+                  },
+                  {
+                    q: "Is 15 days realistic for an MVP?",
+                    a: "Yes, with a focused scope. We define must-have features on day one and ship quickly.",
+                  },
+                  {
+                    q: "Do you handle branding and landing pages?",
+                    a: "Yes. Branding, landing site development, and product UI are included in our sprints.",
+                  },
+                  {
+                    q: "What tech stack do you use?",
+                    a: "We tailor the stack to your product, typically modern web frameworks and scalable backends.",
+                  },
+                  {
+                    q: "How do revisions work?",
+                    a: "We review progress weekly and apply feedback immediately to keep launch on track.",
+                  },
+                  {
+                    q: "Can you build e-commerce MVPs?",
+                    a: "Absolutely. We can deliver storefronts, checkout, and ops-ready flows in the sprint.",
+                  },
+                ].map((item) => (
+                  <details key={item.q} className="group py-4">
+                    <summary className="flex cursor-pointer list-none items-center justify-between text-sm font-semibold">
+                      {item.q}
+                      <span className="text-lg text-[var(--muted)] transition group-open:rotate-45">
+                        +
+                      </span>
+                    </summary>
+                    <p className="mt-3 text-sm text-[var(--muted)]">{item.a}</p>
+                  </details>
+                ))}
               </div>
             </div>
           </section>

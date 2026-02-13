@@ -13,14 +13,16 @@
 @theme inline {
   --color-background: var(--canvas);
   --color-foreground: var(--ink);
-  --font-sans: var(--font-geist-sans);
-  --font-display: var(--font-display);
+  --font-sans:
+    "Avenir", "Avenir Next", "Avenir Next LT Pro", "Segoe UI", "Helvetica Neue",
+    Arial, sans-serif;
+  --font-display: var(--font-sans);
 }
 
 body {
   background-color: var(--canvas);
   color: var(--ink);
-  font-family: var(--font-sans), system-ui, sans-serif;
+  font-family: var(--font-sans);
   min-height: 100vh;
   background-image:
     radial-gradient(
@@ -40,6 +42,6 @@ body {
 h1,
 h2,
 h3 {
-  font-family: var(--font-display), var(--font-sans), sans-serif;
+  font-family: var(--font-display);
   letter-spacing: -0.02em;
 }
