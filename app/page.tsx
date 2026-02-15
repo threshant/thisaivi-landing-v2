@@ -1,3 +1,6 @@
+import RecentWorksMarquee from "./components/RecentWorksMarquee";
+import ScrollReveal from "./components/ScrollReveal";
+
 export default function Home() {
   return (
     <div className="min-h-screen text-[var(--ink)]">
@@ -50,160 +53,121 @@ export default function Home() {
 
         <main className="mx-auto w-full max-w-6xl px-6 pb-24 pt-10">
           <section className="text-center">
-            <div className="mx-auto flex max-w-3xl flex-col items-center">
-              <span className="inline-flex items-center gap-2 rounded-full border border-[var(--line)] bg-[var(--card)] px-4 py-1 text-xs font-semibold text-[var(--muted)]">
-                New
-                <span className="text-[var(--ink)]">
-                  15-day MVP sprints for startups
+            <ScrollReveal>
+              <div className="mx-auto flex max-w-3xl flex-col items-center">
+                <span className="inline-flex items-center gap-2 rounded-full border border-[var(--line)] bg-[var(--card)] px-4 py-1 text-xs font-semibold text-[var(--muted)]">
+                  New
+                  <span className="text-[var(--ink)]">
+                    15-day MVP sprints for startups
+                  </span>
                 </span>
-              </span>
-              <h1 className="mt-6 text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">
-                Lightspeed MVPs that get to market fast.
-              </h1>
-              <p className="mt-6 max-w-2xl text-base leading-7 text-[var(--muted)]">
-                Thisaivi designs, builds, and ships production-ready MVPs in 15
-                days. Focused scope, rapid delivery, and a launch plan that
-                keeps momentum high.
-              </p>
-              <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
-                <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--muted)]">
-                  Services
-                </span>
-                <div className="flex flex-wrap items-center justify-center gap-4 text-xs text-[var(--muted)]">
-                  <span className="inline-flex items-center gap-2">
-                    <span className="h-2 w-2 rounded-full bg-[var(--accent)]" />
-                    App development
-                  </span>
-                  <span className="inline-flex items-center gap-2">
-                    <span className="h-2 w-2 rounded-full bg-[var(--accent-2)]" />
-                    E-commerce
-                  </span>
-                  <span className="inline-flex items-center gap-2">
-                    <span className="h-2 w-2 rounded-full bg-[var(--ink)]" />
-                    Branding
-                  </span>
-                  <span className="inline-flex items-center gap-2">
-                    <span className="h-2 w-2 rounded-full bg-[var(--muted)]" />
-                    Landing sites
-                  </span>
+                <h1 className="mt-6 text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">
+                  Lightspeed MVPs that get to market fast.
+                </h1>
+                <p className="mt-6 max-w-2xl text-base leading-7 text-[var(--muted)]">
+                  Thisaivi designs, builds, and ships production-ready MVPs in
+                  15 days. Focused scope, rapid delivery, and a launch plan that
+                  keeps momentum high.
+                </p>
+                <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+                  <button className="rounded-full bg-[var(--accent)] px-6 py-3 text-sm font-semibold text-white transition hover:translate-y-[-1px]">
+                    Book a kickoff call
+                  </button>
+                  <button className="rounded-full border border-[var(--line)] px-6 py-3 text-sm font-semibold text-[var(--ink)] transition hover:border-[var(--ink)]">
+                    See the process
+                  </button>
                 </div>
+                <p className="mt-4 text-xs text-[var(--muted)]">
+                  Delivery in 15 days. Design, build, and launch included.
+                </p>
               </div>
-              <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-                <button className="rounded-full bg-[var(--accent)] px-6 py-3 text-sm font-semibold text-white transition hover:translate-y-[-1px]">
-                  Book a kickoff call
-                </button>
-                <button className="rounded-full border border-[var(--line)] px-6 py-3 text-sm font-semibold text-[var(--ink)] transition hover:border-[var(--ink)]">
-                  See the process
-                </button>
-              </div>
-              <p className="mt-4 text-xs text-[var(--muted)]">
-                Delivery in 15 days. Design, build, and launch included.
-              </p>
-            </div>
+            </ScrollReveal>
           </section>
 
           <section className="mt-16">
-            <div className="relative overflow-hidden rounded-3xl border border-[var(--line)] px-6 py-10 md:px-10">
-              <div className="max-w-3xl">
-                <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">
-                  Built for founders and teams
-                </p>
-                <h2 className="mt-4 text-3xl font-semibold leading-tight sm:text-4xl">
-                  Thisaivi helps you ship MVPs faster and grow your launch
-                  momentum.
-                </h2>
-                <p className="mt-4 text-sm text-[var(--muted)]">
-                  Whether you are validating a new idea or accelerating a
-                  roadmap, we keep delivery tight with a 15-day timeline and
-                  weekly demos.
-                </p>
-              </div>
-              <div className="mt-10 grid gap-8 md:grid-cols-3">
-                <div className="border-l border-[var(--line)] pl-6">
-                  <p className="text-2xl font-semibold">15 days</p>
-                  <p className="mt-2 text-xs text-[var(--muted)]">
-                    MVP delivery window
+            <ScrollReveal>
+              <div className="relative overflow-hidden rounded-3xl border border-[var(--line)] px-6 py-10 md:px-10">
+                <div className="max-w-3xl">
+                  <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">
+                    Built for founders and teams
+                  </p>
+                  <h2 className="mt-4 text-3xl font-semibold leading-tight sm:text-4xl">
+                    Thisaivi helps you ship MVPs faster and grow your launch
+                    momentum.
+                  </h2>
+                  <p className="mt-4 text-sm text-[var(--muted)]">
+                    Whether you are validating a new idea or accelerating a
+                    roadmap, we keep delivery tight with a 15-day timeline and
+                    weekly demos.
                   </p>
                 </div>
-                <div className="border-l border-[var(--line)] pl-6">
-                  <p className="text-2xl font-semibold">4 core</p>
-                  <p className="mt-2 text-xs text-[var(--muted)]">
-                    Services included
-                  </p>
+                <div className="mt-10 grid gap-8 md:grid-cols-3">
+                  <div className="border-l border-[var(--line)] pl-6">
+                    <p className="text-2xl font-semibold">15 days</p>
+                    <p className="mt-2 text-xs text-[var(--muted)]">
+                      MVP delivery window
+                    </p>
+                  </div>
+                  <div className="border-l border-[var(--line)] pl-6">
+                    <p className="text-2xl font-semibold">4 core</p>
+                    <p className="mt-2 text-xs text-[var(--muted)]">
+                      Services included
+                    </p>
+                  </div>
+                  <div className="border-l border-[var(--line)] pl-6">
+                    <p className="text-2xl font-semibold">Weekly</p>
+                    <p className="mt-2 text-xs text-[var(--muted)]">
+                      Demo + feedback loop
+                    </p>
+                  </div>
                 </div>
-                <div className="border-l border-[var(--line)] pl-6">
-                  <p className="text-2xl font-semibold">Weekly</p>
-                  <p className="mt-2 text-xs text-[var(--muted)]">
-                    Demo + feedback loop
-                  </p>
-                </div>
-              </div>
-              <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32">
-                <svg
-                  viewBox="0 0 1200 240"
-                  className="h-full w-full"
-                  preserveAspectRatio="none"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M0 220 C 200 210, 300 200, 420 180 C 560 150, 640 120, 780 90 C 900 65, 1020 35, 1200 20"
-                    fill="none"
-                    stroke="rgba(15, 29, 27, 0.25)"
-                    strokeWidth="2"
-                  />
-                  {Array.from({ length: 9 }).map((_, index) => (
-                    <line
-                      key={`grid-${index}`}
-                      x1={80 + index * 120}
-                      y1={240}
-                      x2={80 + index * 120}
-                      y2={0}
-                      stroke="rgba(15, 29, 27, 0.12)"
-                      strokeDasharray="4 6"
+                <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32">
+                  <svg
+                    viewBox="0 0 1200 240"
+                    className="h-full w-full"
+                    preserveAspectRatio="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M0 220 C 200 210, 300 200, 420 180 C 560 150, 640 120, 780 90 C 900 65, 1020 35, 1200 20"
+                      fill="none"
+                      stroke="rgba(15, 29, 27, 0.25)"
+                      strokeWidth="2"
                     />
-                  ))}
-                </svg>
+                    {Array.from({ length: 9 }).map((_, index) => (
+                      <line
+                        key={`grid-${index}`}
+                        x1={80 + index * 120}
+                        y1={240}
+                        x2={80 + index * 120}
+                        y2={0}
+                        stroke="rgba(15, 29, 27, 0.12)"
+                        strokeDasharray="4 6"
+                      />
+                    ))}
+                  </svg>
+                </div>
               </div>
-            </div>
-          </section>
-
-          <section className="mt-20 border-y border-[var(--line)] py-10">
-            <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-              <h2 className="text-2xl font-semibold">
-                Built for founders who need speed.
-              </h2>
-              <div className="flex flex-wrap gap-3 text-xs text-[var(--muted)]">
-                <span className="rounded-full border border-[var(--line)] px-3 py-1">
-                  Product strategy
-                </span>
-                <span className="rounded-full border border-[var(--line)] px-3 py-1">
-                  UX + UI design
-                </span>
-                <span className="rounded-full border border-[var(--line)] px-3 py-1">
-                  Engineering sprint
-                </span>
-                <span className="rounded-full border border-[var(--line)] px-3 py-1">
-                  Launch support
-                </span>
-              </div>
-            </div>
+            </ScrollReveal>
           </section>
 
           <section id="agents" className="mt-20">
-            <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
-              <div>
-                <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">
-                  Services
+            <ScrollReveal>
+              <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+                <div>
+                  <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">
+                    Services
+                  </p>
+                  <h2 className="mt-3 text-3xl font-semibold">
+                    Everything you need to launch fast.
+                  </h2>
+                </div>
+                <p className="max-w-lg text-sm text-[var(--muted)]">
+                  Thisaivi is a full-stack partner for early-stage teams. We
+                  ship focused, validated MVPs on a fixed 15-day timeline.
                 </p>
-                <h2 className="mt-3 text-3xl font-semibold">
-                  Everything you need to launch fast.
-                </h2>
               </div>
-              <p className="max-w-lg text-sm text-[var(--muted)]">
-                Thisaivi is a full-stack partner for early-stage teams. We ship
-                focused, validated MVPs on a fixed 15-day timeline.
-              </p>
-            </div>
+            </ScrollReveal>
             <div className="mt-10 grid gap-6 md:grid-cols-2">
               {[
                 {
@@ -222,59 +186,129 @@ export default function Home() {
                   title: "Landing site development",
                   text: "Ship high-converting marketing sites with analytics and fast iteration.",
                 },
-              ].map((card) => (
-                <div
-                  key={card.title}
-                  className="rounded-3xl border border-[var(--line)] bg-[var(--card)] p-6"
-                >
-                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white text-sm font-semibold">
-                    {card.title
-                      .split(" ")
-                      .map((word) => word[0])
-                      .join("")}
+              ].map((card, index) => (
+                <ScrollReveal key={card.title} delay={index * 0.05}>
+                  <div className="rounded-3xl border border-[var(--line)] bg-[var(--card)] p-6">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white text-sm font-semibold">
+                      {card.title
+                        .split(" ")
+                        .map((word) => word[0])
+                        .join("")}
+                    </div>
+                    <h3 className="mt-6 text-xl font-semibold">{card.title}</h3>
+                    <p className="mt-3 text-sm text-[var(--muted)]">
+                      {card.text}
+                    </p>
                   </div>
-                  <h3 className="mt-6 text-xl font-semibold">{card.title}</h3>
-                  <p className="mt-3 text-sm text-[var(--muted)]">
-                    {card.text}
-                  </p>
-                </div>
+                </ScrollReveal>
               ))}
             </div>
           </section>
 
-          <section id="workflow" className="mt-24">
-            <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
-              <div>
-                <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">
-                  Process
-                </p>
-                <h2 className="mt-3 text-3xl font-semibold">
-                  From kickoff to launch in 15 days.
-                </h2>
-              </div>
-              <p className="max-w-lg text-sm text-[var(--muted)]">
-                Tight scope, daily updates, and fast build cycles keep your MVP
-                on track and ready to ship.
-              </p>
-            </div>
-            <div className="mt-10 grid gap-4 lg:grid-cols-5">
-              {[
-                "Discovery + scope",
-                "UX/UI sprint",
-                "Engineering build",
-                "QA + polish",
-                "Launch handoff",
-              ].map((step, index) => (
-                <div
-                  key={step}
-                  className="rounded-2xl border border-[var(--line)] bg-white/70 p-4"
-                >
-                  <p className="text-xs text-[var(--muted)]">
-                    Step {index + 1}
+          <section className="mt-20">
+            <ScrollReveal>
+              <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+                <div>
+                  <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">
+                    Recent work
                   </p>
-                  <p className="mt-2 text-sm font-semibold">{step}</p>
+                  <h2 className="mt-3 text-3xl font-semibold">
+                    Fresh MVPs shipped in 15 days.
+                  </h2>
                 </div>
-              ))}
+                <p className="max-w-lg text-sm text-[var(--muted)]">
+                  A snapshot of the latest launches, gliding by with a
+                  continuous scroll.
+                </p>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={0.1}>
+              <RecentWorksMarquee />
+            </ScrollReveal>
+          </section>
+
+          <section id="workflow" className="mt-24">
+            <ScrollReveal>
+              <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+                <div>
+                  <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">
+                    Process
+                  </p>
+                  <h2 className="mt-3 text-3xl font-semibold">
+                    From kickoff to launch in 15 days.
+                  </h2>
+                </div>
+                <p className="max-w-lg text-sm text-[var(--muted)]">
+                  Tight scope, daily updates, and fast build cycles keep your
+                  MVP on track and ready to ship.
+                </p>
+              </div>
+            </ScrollReveal>
+            <div className="relative mt-12">
+              <div className="absolute left-2 top-0 h-full w-px bg-[var(--line)] md:hidden" />
+              <div className="absolute left-0 right-0 top-2 hidden h-px bg-[var(--line)] md:block" />
+              <div className="grid gap-6 text-sm text-[var(--muted)] md:grid-cols-4 md:gap-10">
+                {[
+                  {
+                    title: "Research",
+                    items: [
+                      "Business goals",
+                      "Stakeholder interviews",
+                      "Competitive scan",
+                      "User insights",
+                    ],
+                  },
+                  {
+                    title: "Design",
+                    items: [
+                      "Information architecture",
+                      "Wireframes",
+                      "Prototype",
+                      "UI system",
+                    ],
+                  },
+                  {
+                    title: "Build",
+                    items: [
+                      "Sprint planning",
+                      "Engineering build",
+                      "QA + polish",
+                      "Launch prep",
+                    ],
+                  },
+                  {
+                    title: "Deliver",
+                    items: [
+                      "Handoff docs",
+                      "Deployment",
+                      "QA feedback",
+                      "Growth check-ins",
+                    ],
+                  },
+                ].map((phase, index) => (
+                  <ScrollReveal key={phase.title} delay={index * 0.05}>
+                    <div className="relative">
+                      <div className="relative z-10 mb-4 flex  gap-3 md:mb-6">
+                        <span className="relative flex h-5 w-5 shrink-0 items-center justify-center rounded-full border border-[var(--line)] bg-[var(--canvas)]">
+                          <span className="h-2 w-2 rounded-full bg-[var(--accent)]" />
+                        </span>
+                        <div className="flex flex-col gap-4 sm:my-0 my-4">
+                          <h3 className="text-lg font-semibold text-[var(--ink)]">
+                            {phase.title}
+                          </h3>
+                          <ul className="space-y-2">
+                            {phase.items.map((item) => (
+                              <li key={item} className="text-sm">
+                                {item}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </ScrollReveal>
+                ))}
+              </div>
             </div>
           </section>
 
