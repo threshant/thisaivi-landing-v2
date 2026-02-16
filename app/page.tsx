@@ -1,3 +1,4 @@
+import { FiCode, FiGlobe, FiImage, FiShoppingCart } from "react-icons/fi";
 import RecentWorksMarquee from "./components/RecentWorksMarquee";
 import ScrollReveal from "./components/ScrollReveal";
 
@@ -87,19 +88,28 @@ export default function Home() {
           <section className="mt-16">
             <ScrollReveal>
               <div className="relative overflow-hidden rounded-3xl border border-[var(--line)] px-6 py-10 md:px-10">
-                <div className="max-w-3xl">
-                  <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">
-                    Built for founders and teams
-                  </p>
-                  <h2 className="mt-4 text-3xl font-semibold leading-tight sm:text-4xl">
-                    Thisaivi helps you ship MVPs faster and grow your launch
-                    momentum.
-                  </h2>
-                  <p className="mt-4 text-sm text-[var(--muted)]">
-                    Whether you are validating a new idea or accelerating a
-                    roadmap, we keep delivery tight with a 15-day timeline and
-                    weekly demos.
-                  </p>
+                <div className="grid gap-8 md:grid-cols-2 md:items-center">
+                  <div className="max-w-3xl">
+                    <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">
+                      Built for founders and teams
+                    </p>
+                    <h2 className="mt-4 text-3xl font-semibold leading-tight sm:text-4xl">
+                      Thisaivi helps you ship MVPs faster and grow your launch
+                      momentum.
+                    </h2>
+                    <p className="mt-4 text-sm text-[var(--muted)]">
+                      Whether you are validating a new idea or accelerating a
+                      roadmap, we keep delivery tight with a 15-day timeline and
+                      weekly demos.
+                    </p>
+                  </div>
+                  <div className="hidden md:flex md:justify-end">
+                    <img
+                      src="/hero.png"
+                      alt="Thisaivi MVP process"
+                      className="rounded-2xl object-cover"
+                    />
+                  </div>
                 </div>
                 <div className="mt-10 grid gap-8 md:grid-cols-3">
                   <div className="border-l border-[var(--line)] pl-6">
@@ -120,32 +130,6 @@ export default function Home() {
                       Demo + feedback loop
                     </p>
                   </div>
-                </div>
-                <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32">
-                  <svg
-                    viewBox="0 0 1200 240"
-                    className="h-full w-full"
-                    preserveAspectRatio="none"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M0 220 C 200 210, 300 200, 420 180 C 560 150, 640 120, 780 90 C 900 65, 1020 35, 1200 20"
-                      fill="none"
-                      stroke="rgba(15, 29, 27, 0.25)"
-                      strokeWidth="2"
-                    />
-                    {Array.from({ length: 9 }).map((_, index) => (
-                      <line
-                        key={`grid-${index}`}
-                        x1={80 + index * 120}
-                        y1={240}
-                        x2={80 + index * 120}
-                        y2={0}
-                        stroke="rgba(15, 29, 27, 0.12)"
-                        strokeDasharray="4 6"
-                      />
-                    ))}
-                  </svg>
                 </div>
               </div>
             </ScrollReveal>
@@ -173,27 +157,28 @@ export default function Home() {
                 {
                   title: "App development",
                   text: "Build web and mobile MVPs with scalable architecture and clean UX.",
+                  icon: FiCode,
                 },
                 {
                   title: "E-commerce sites",
                   text: "Launch conversion-ready stores with payment, catalog, and ops flows.",
+                  icon: FiShoppingCart,
                 },
                 {
                   title: "Branding",
                   text: "Define identity, voice, and visual system that feel credible on day one.",
+                  icon: FiImage,
                 },
                 {
                   title: "Landing site development",
                   text: "Ship high-converting marketing sites with analytics and fast iteration.",
+                  icon: FiGlobe,
                 },
               ].map((card, index) => (
                 <ScrollReveal key={card.title} delay={index * 0.05}>
                   <div className="rounded-3xl border border-[var(--line)] bg-[var(--card)] p-6">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white text-sm font-semibold">
-                      {card.title
-                        .split(" ")
-                        .map((word) => word[0])
-                        .join("")}
+                    <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white text-sm font-semibold text-[var(--ink)]">
+                      <card.icon size={24} />
                     </div>
                     <h3 className="mt-6 text-xl font-semibold">{card.title}</h3>
                     <p className="mt-3 text-sm text-[var(--muted)]">
