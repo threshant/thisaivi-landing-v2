@@ -277,8 +277,8 @@ export default function Home() {
                         <span className="relative flex h-5 w-5 shrink-0 items-center justify-center rounded-full border border-[var(--line)] bg-[var(--canvas)]">
                           <span className="h-2 w-2 rounded-full bg-[var(--accent)]" />
                         </span>
-                        <div className="flex flex-col gap-4 sm:my-0 my-4">
-                          <h3 className="text-lg font-semibold text-[var(--ink)]">
+                        <div className="flex flex-col gap-2 sm:my-0 ">
+                          <h3 className="text-lg font-semibold text-[var(--ink)] md:mt-4 mt-0">
                             {phase.title}
                           </h3>
                           <ul className="space-y-2">
