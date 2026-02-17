@@ -65,7 +65,7 @@ export default function RecentWorksMarquee() {
         {works.map((work) => (
           <article
             key={work.title}
-            className="mx-3 flex h-64 w-64 shrink-0 flex-col rounded-3xl border border-[var(--line)] bg-white/80 p-5"
+            className="mx-3 flex h-64 w-64 shrink-0 flex-col rounded-3xl border border-[var(--line)] bg-[var(--card)] p-5"
           >
             <div className="flex items-center justify-between">
               <div

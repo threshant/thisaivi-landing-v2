@@ -1,11 +1,81 @@
-import { FiCode, FiGlobe, FiImage, FiShoppingCart } from "react-icons/fi";
+"use client";
+
+import { useEffect, useState } from "react";
 import RecentWorksMarquee from "./components/RecentWorksMarquee";
 import ScrollReveal from "./components/ScrollReveal";
 
+const ServiceArt = ({ name }: { name: string }) => {
+  const artClassName = "h-20 w-20";
+
+  switch (name) {
+    case "App development":
+      return (
+        <img
+          className={artClassName}
+          src="/services/app.svg"
+          alt="App development service"
+        />
+      );
+    case "E-commerce sites":
+      return (
+        <img
+          className={artClassName}
+          src="/services/ecomm.svg"
+          alt="E-commerce service"
+        />
+      );
+    case "Branding":
+      return (
+        <img
+          className={artClassName}
+          src="/services/branding.svg"
+          alt="Branding service"
+        />
+      );
+    case "Landing site development":
+      return (
+        <img
+          className={artClassName}
+          src="/services/landing.svg"
+          alt="Landing site service"
+        />
+      );
+    default:
+      return null;
+  }
+};
+
 export default function Home() {
+  const [cursor, setCursor] = useState({ x: 0, y: 0, visible: false });
+
+  useEffect(() => {
+    const handleMove = (event: MouseEvent) => {
+      setCursor({ x: event.clientX, y: event.clientY, visible: true });
+    };
+
+    const handleLeave = () => {
+      setCursor((prev) => ({ ...prev, visible: false }));
+    };
+
+    window.addEventListener("mousemove", handleMove);
+    window.addEventListener("mouseleave", handleLeave);
+
+    return () => {
+      window.removeEventListener("mousemove", handleMove);
+      window.removeEventListener("mouseleave", handleLeave);
+    };
+  }, []);
+
   return (
     <div className="min-h-screen text-[var(--ink)]">
-      <div className="relative overflow-hidden">
+      <div
+        className="pointer-events-none fixed left-0 top-0 z-50 h-4 w-4 rounded-full bg-white mix-blend-difference transition-opacity duration-150"
+        style={{
+          transform: `translate(${cursor.x}px, ${cursor.y}px) translate(-50%, -50%)`,
+          opacity: cursor.visible ? 1 : 0,
+        }}
+      />
+      <div className="relative">
         <div className="pointer-events-none absolute -top-28 left-[5%] h-64 w-64 rounded-full bg-[#f25c2b]/20 blur-3xl" />
 
         <header className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-6">
@@ -152,40 +222,43 @@ export default function Home() {
                 </p>
               </div>
             </ScrollReveal>
-            <div className="mt-10 grid gap-6 md:grid-cols-2">
+            <div className="mt-10 flex flex-col gap-6 pb-24">
               {[
                 {
                   title: "App development",
                   text: "Build web and mobile MVPs with scalable architecture and clean UX.",
-                  icon: FiCode,
                 },
                 {
                   title: "E-commerce sites",
                   text: "Launch conversion-ready stores with payment, catalog, and ops flows.",
-                  icon: FiShoppingCart,
                 },
                 {
                   title: "Branding",
                   text: "Define identity, voice, and visual system that feel credible on day one.",
-                  icon: FiImage,
                 },
                 {
                   title: "Landing site development",
                   text: "Ship high-converting marketing sites with analytics and fast iteration.",
-                  icon: FiGlobe,
                 },
               ].map((card, index) => (
-                <ScrollReveal key={card.title} delay={index * 0.05}>
-                  <div className="rounded-3xl border border-[var(--line)] bg-[var(--card)] p-6">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white text-sm font-semibold text-[var(--ink)]">
-                      <card.icon size={24} />
+                <div
+                  key={card.title}
+                  className="rounded-3xl border border-[var(--line)] bg-[var(--card)]/50 p-6 sticky top-10 backdrop-blur-sm"
+                >
+                  <ScrollReveal delay={index * 0.05}>
+                    <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+                      <div>
+                        <h3 className="text-xl font-semibold">{card.title}</h3>
+                        <p className="mt-3 max-w-md text-sm text-[var(--muted)]">
+                          {card.text}
+                        </p>
+                      </div>
+                      <div className="shrink-0 self-start sm:self-auto">
+                        <ServiceArt name={card.title} />
+                      </div>
                     </div>
-                    <h3 className="mt-6 text-xl font-semibold">{card.title}</h3>
-                    <p className="mt-3 text-sm text-[var(--muted)]">
-                      {card.text}
-                    </p>
-                  </div>
-                </ScrollReveal>
+                  </ScrollReveal>
+                </div>
               ))}
             </div>
           </section>
