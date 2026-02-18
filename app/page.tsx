@@ -141,9 +141,12 @@ export default function Home() {
                   keeps momentum high.
                 </p>
                 <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-                  <button className="rounded-full bg-[var(--accent)] px-6 py-3 text-sm font-semibold text-white transition hover:translate-y-[-1px]">
+                  <a
+                    href="https://cal.com/giri-prasath-r/30min"
+                    className="inline-flex rounded-full bg-[var(--accent)] px-6 py-3 text-sm font-semibold text-white transition hover:translate-y-[-1px]"
+                  >
                     Book a kickoff call
-                  </button>
+                  </a>
                   <button className="rounded-full border border-[var(--line)] px-6 py-3 text-sm font-semibold text-[var(--ink)] transition hover:border-[var(--ink)]">
                     See the process
                   </button>
@@ -409,9 +412,12 @@ export default function Home() {
                 <p className="mt-4 text-sm text-[var(--canvas)]/70">
                   Fixed timeline, focused scope, and weekly demos.
                 </p>
-                <button className="mt-6 rounded-full bg-[var(--accent)] px-6 py-3 text-sm font-semibold text-white transition hover:translate-y-[-1px]">
+                <a
+                  href="https://cal.com/giri-prasath-r/30min"
+                  className="mt-6 inline-flex rounded-full bg-[var(--accent)] px-6 py-3 text-sm font-semibold text-white transition hover:translate-y-[-1px]"
+                >
                   Start your MVP sprint
-                </button>
+                </a>
                 <div className="mt-8 border-t border-white/20 pt-6 text-xs text-[var(--canvas)]/70">
                   Delivery in 15 days. Flexible add-ons available.
                 </div>
