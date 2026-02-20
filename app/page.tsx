@@ -127,17 +127,17 @@ export default function Home() {
             <ScrollReveal>
               <div className="mx-auto flex max-w-3xl flex-col items-center">
                 <span className="inline-flex items-center gap-2 rounded-full border border-[var(--line)] bg-[var(--card)] px-4 py-1 text-xs font-semibold text-[var(--muted)]">
-                  New
+                  Production-grade software 10x faster:
                   <span className="text-[var(--ink)]">
-                    15-day MVP sprints for startups
+                    Building MVPs the better way.
                   </span>
                 </span>
                 <h1 className="mt-6 text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">
-                  Lightspeed Products that get to market fast.
+                 Launching Lightspeed MVPs that gets you into markets Faster & Bolder.
                 </h1>
                 <p className="mt-6 max-w-2xl text-base leading-7 text-[var(--muted)]">
-                  Focused scope, rapid delivery, and a launch plan that
-                  keeps momentum high.
+                  We ship Focused scope, Rapid delivery, and a Launch plan that
+                  keeps your momentum high.
                 </p>
                 <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
                   <a
@@ -151,7 +151,7 @@ export default function Home() {
                   </button>
                 </div>
                 <p className="mt-4 text-xs text-[var(--muted)]">
-                  Delivery in 15 days. Design, build, and launch included.
+                  Delivery in 15 days. Design, Build, and Launch included.
                 </p>
               </div>
             </ScrollReveal>
@@ -163,21 +163,21 @@ export default function Home() {
                 <div className="grid gap-8 md:grid-cols-2 md:items-center">
                   <div className="max-w-3xl">
                     <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">
-                      Built for founders and teams
+                      Built for Founders and Makers who need to move fast.
                     </p>
                     <h2 className="mt-4 text-3xl font-semibold leading-tight sm:text-4xl">
                       A Venture Studio helping you build, launch, and Scale.
+                      No long timelines, no scope creep, just a tight process that gets your MVP out the door in 15 days.
                     </h2>
                     <p className="mt-4 text-sm text-[var(--muted)]">
-                      Whether you are validating a new idea or accelerating a
-                      roadmap, we keep delivery tight with a 15-day timeline and
+                      Whether you are validating a new idea or Scaling up, we keep delivery tight with a 15-day timeline and
                       weekly demos.
                     </p>
                   </div>
                   <div className="hidden md:flex md:justify-end">
                     <img
                       src="/hero.png"
-                      alt="Thisaivi MVP process"
+                      alt="The MVP process"
                       className="rounded-2xl object-cover"
                     />
                   </div>
@@ -227,7 +227,7 @@ export default function Home() {
               {[
                 {
                   title: "Application development",
-                  text: "From idea to prototype, we build user-friendly apps with scalable backends.",
+                  text: "From idea to prototype, we build AI enabled user-friendly apps with scalable backends.",
                   },
                 {
                   title: "E-commerce",
@@ -294,7 +294,7 @@ export default function Home() {
                     Process
                   </p>
                   <h2 className="mt-3 text-3xl font-semibold">
-                    From kickoff to launch in 15 days.
+                    From kickoff to Launch in 15 days.
                   </h2>
                 </div>
                 <p className="max-w-lg text-sm text-[var(--muted)]">
@@ -387,6 +387,7 @@ export default function Home() {
                 <div className="mt-6 grid gap-4 sm:grid-cols-2">
                   {[
                     "Product strategy",
+                    "AI-powered prototypes",
                     "UX/UI design",
                     "Full-stack build",
                     "Analytics setup",
@@ -408,7 +409,7 @@ export default function Home() {
                   Get a shipped MVP in 15 days.
                 </h3>
                 <p className="mt-4 text-sm text-[var(--canvas)]/70">
-                  Fixed timeline, focused scope, and weekly demos.
+                  Fixed timeline, Focused scope, and Streamlined delivery.
                 </p>
                 <a
                   href="https://cal.com/giri-prasath-r/30min"
@@ -427,7 +428,7 @@ export default function Home() {
             <div className="rounded-3xl border border-[var(--line)] bg-[var(--card)] px-6 py-10 md:px-10">
               <div className="max-w-2xl">
                 <span className="inline-flex items-center rounded-full border border-[var(--line)] bg-white px-3 py-1 text-xs font-semibold text-[var(--muted)]">
-                  FAQ
+                  FAQs.
                 </span>
                 <h2 className="mt-4 text-3xl font-semibold">
                   Common questions
@@ -440,7 +441,7 @@ export default function Home() {
                 {[
                   {
                     q: "What do you need to start?",
-                    a: "A clear goal, target users, and any existing assets. We handle the rest in the kickoff call.",
+                    a: "A clear goal, Target users, and any existing assets. We handle the rest in the kickoff call.",
                   },
                   {
                     q: "Is 15 days realistic for an MVP?",
