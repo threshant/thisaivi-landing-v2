@@ -133,7 +133,7 @@ export default function Home() {
                   </span>
                 </span>
                 <h1 className="mt-6 text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">
-                 Launching Lightspeed MVPs that gets you into markets Faster & Bolder.
+                 Launching Lightspeed MVPs into markets <span className=" text-[var(--accent)] font-bold">Faster & Bolder.</span>
                 </h1>
                 <p className="mt-6 max-w-2xl text-base leading-7 text-[var(--muted)]">
                   We ship Focused scope, Rapid delivery, and a Launch plan that
