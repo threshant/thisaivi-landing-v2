@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import ImageShuffleGame from "./components/ImageShuffleGame";
 import RecentWorksMarquee from "./components/RecentWorksMarquee";
 import ScrollReveal from "./components/ScrollReveal";
 
@@ -176,12 +177,8 @@ export default function Home() {
                       weekly demos.
                     </p>
                   </div>
-                  <div className="hidden md:flex md:justify-end">
-                    <img
-                      src="/hero.png"
-                      alt="Thisaivi MVP process"
-                      className="rounded-2xl object-cover"
-                    />
+                  <div className="hidden md:flex md:justify-center md:items-center">
+                    <ImageShuffleGame imageSrc="/hero.png" />
                   </div>
                 </div>
                 <div className="mt-10 grid gap-8 md:grid-cols-3">
@@ -485,34 +482,37 @@ export default function Home() {
         <div className="mx-auto flex w-full max-w-6xl flex-col gap-6 px-6 py-10 md:flex-row md:items-center md:justify-between">
           <div>
             <p className="text-sm font-semibold">Thisaivi</p>
-            <p className="mt-2 text-xs text-[var(--muted)]">
-              Lightspeed MVPs for startups. Delivered in 15 days.
+
+            <p className=" text-xs text-[var(--muted)]">
+              A unit of{" "}
+              <a
+                href="https://aviontive.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-colors hover:text-[var(--ink)]"
+              >
+                Aviontive LLP
+              </a>
             </p>
           </div>
           <div className="flex flex-wrap gap-6 text-xs text-[var(--muted)]">
             <a
               className="transition-colors hover:text-[var(--ink)]"
-              href="#agents"
+              href="https://twitter.com/thisaivi"
             >
-              Agents
+              Instagram
             </a>
             <a
               className="transition-colors hover:text-[var(--ink)]"
-              href="#workflow"
+              href="https://www.linkedin.com/company/thisaivi-studio/"
             >
-              Workflow
+              Linkedin
             </a>
-            <a
-              className="transition-colors hover:text-[var(--ink)]"
-              href="#pricing"
-            >
-              Pricing
+            <a className="transition-colors hover:text-[var(--ink)]" href="#">
+              Careers
             </a>
-            <a
-              className="transition-colors hover:text-[var(--ink)]"
-              href="#about"
-            >
-              About
+            <a className="transition-colors hover:text-[var(--ink)]" href="#">
+              Terms
             </a>
           </div>
         </div>
