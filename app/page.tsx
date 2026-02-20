@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { TypeAnimation } from "react-type-animation";
 import RecentWorksMarquee from "./components/RecentWorksMarquee";
 import ScrollReveal from "./components/ScrollReveal";
 
@@ -131,7 +132,7 @@ export default function Home() {
                   </span>
                 </span>
                 <h1 className="mt-6 text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">
-                 Launching <span className=" text-[var(--accent)]">Lightspeed MVPs</span> into markets Faster & Bolder.
+                 Launching <span className="text-[var(--accent)] italic flare-underline">Lightspeed MVPs</span> into arkets Faster & Bolder.
                 </h1>
                 <p className="mt-6 max-w-2xl text-base leading-7 text-[var(--muted)]">
                   We ship Focused scope, Rapid delivery, and a Launch plan that
@@ -163,13 +164,25 @@ export default function Home() {
                     <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">
                       Built for Founders and Makers who need to move fast.
                     </p>
-                    <h2 className="mt-4 text-3xl font-semibold leading-tight sm:text-4xl">
-                      A Venture Studio helping you build, launch, and Scale.
-                      No long timelines, no scope creep, just a tight process that gets your MVP out the door in 15 days.
+                    <h2 className="mt-4 text-[3rem] font-semibold leading-tight">
+                      A Venture Studio Helping You<br></br><TypeAnimation
+                        sequence={[
+                          "Build",
+                          2000,
+                          "Launch",
+                          2000,
+                          "Scale",
+                          2000,
+                        ]}
+                        wrapper="span"
+                        cursor={true}
+                        repeat={Infinity}
+                        style={{ display: "inline-block", color: "var(--accent)", fontSize: "3rem" }}
+                      />  
+                      
                     </h2>
-                    <p className="mt-4 text-sm text-[var(--muted)]">
-                      Whether you are validating a new idea or Scaling up, we keep delivery tight with a 15-day timeline and
-                      weekly demos.
+                    <p className="mt-4 text-md text-[var(--muted)]">
+                      No Long Timelines, No Scope Creep, Just a tight process that gets your MVP out the door in 15 days.
                     </p>
                   </div>
                   <div className="hidden md:flex md:justify-end">

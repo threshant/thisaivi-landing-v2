@@ -45,3 +45,41 @@ h3 {
   font-family: var(--font-display);
   letter-spacing: -0.02em;
 }
+
+@keyframes flareUnderline {
+  0% {
+    background-position: -100% 0;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    background-position: 100% 0;
+    opacity: 0;
+  }
+}
+
+.flare-underline {
+  position: relative;
+  text-decoration: none;
+}
+
+.flare-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 20px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(242, 92, 43, 0.5),
+    rgba(242, 92, 43, 1),
+    rgba(242, 92, 43, 0.5),
+    transparent
+  );
+  background-size: 200% 100%;
+  animation: flareUnderline 2s ease-in-out infinite;
+}
