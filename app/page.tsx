@@ -87,11 +87,11 @@ export default function Home() {
             />
           </div>
           <nav className="hidden items-center gap-8 text-sm text-[var(--muted)] md:flex">
-            <a
+           <a
               className="transition-colors hover:text-[var(--ink)]"
-              href="#agents"
+              href="#about"
             >
-              Agents
+              About
             </a>
             <a
               className="transition-colors hover:text-[var(--ink)]"
@@ -99,23 +99,21 @@ export default function Home() {
             >
               Workflow
             </a>
+             <a
+              className="transition-colors hover:text-[var(--ink)]"
+              href="#agents"
+            >
+              Agents
+            </a>
             <a
               className="transition-colors hover:text-[var(--ink)]"
               href="#pricing"
             >
               Pricing
             </a>
-            <a
-              className="transition-colors hover:text-[var(--ink)]"
-              href="#about"
-            >
-              About
-            </a>
           </nav>
           <div className="flex items-center gap-3">
-            <button className="hidden rounded-full border border-[var(--line)] px-4 py-2 text-sm text-[var(--ink)] transition hover:border-[var(--ink)] sm:inline-flex">
-              Log in
-            </button>
+           
             <button className="rounded-full bg-[var(--ink)] px-4 py-2 text-sm font-semibold text-[var(--canvas)] transition hover:translate-y-[-1px]">
               Get started
             </button>
