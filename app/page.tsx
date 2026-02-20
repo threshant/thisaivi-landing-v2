@@ -132,7 +132,7 @@ export default function Home() {
                   </span>
                 </span>
                 <h1 className="mt-6 text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">
-                  Launching{" "}
+                  {" "}
                   <span className="text-[var(--accent)] italic flare-underline">
                     Lightspeed MVPs
                   </span>{" "}
@@ -168,7 +168,7 @@ export default function Home() {
                     <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">
                       Built for Founders and Makers who need to move fast.
                     </p>
-                    <h2 className="mt-4 text-[3rem] font-semibold leading-tight">
+                    <h2 className="mt-4 text-2xl sm:text-3xl lg:text-[3rem] font-semibold leading-tight">
                       A Venture Studio Helping You<br></br>
                       <TypeAnimation
                         sequence={[
@@ -185,11 +185,11 @@ export default function Home() {
                         style={{
                           display: "inline-block",
                           color: "var(--accent)",
-                          fontSize: "3rem",
+                          fontSize: "clamp(1.5rem, 8vw, 3rem)",
                         }}
                       />
                     </h2>
-                    <p className="mt-4 text-md text-[var(--muted)]">
+                    <p className="mt-4 text-sm sm:text-base lg:text-lg text-[var(--muted)]">
                       No Long Timelines, No Scope Creep, Just a tight process
                       that gets your MVP out the door in 15 days.
                     </p>
@@ -229,7 +229,7 @@ export default function Home() {
                   <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">
                     Services
                   </p>
-                  <h2 className="mt-3 text-3xl font-semibold">
+                  <h2 className="mt-3 text-xl sm:text-2xl lg:text-3xl font-semibold">
                     Everything you need to launch fast.
                   </h2>
                 </div>
@@ -287,7 +287,7 @@ export default function Home() {
                   <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">
                     Recent work
                   </p>
-                  <h2 className="mt-3 text-3xl font-semibold">
+                  <h2 className="mt-3 text-xl sm:text-2xl lg:text-3xl font-semibold">
                     Fresh MVPs shipped in 15 days.
                   </h2>
                 </div>
@@ -309,7 +309,7 @@ export default function Home() {
                   <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">
                     Process
                   </p>
-                  <h2 className="mt-3 text-3xl font-semibold">
+                  <h2 className="mt-3 text-xl sm:text-2xl lg:text-3xl font-semibold">
                     From kickoff to Launch in 15 days.
                   </h2>
                 </div>
@@ -393,7 +393,7 @@ export default function Home() {
                 <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">
                   Deliverables
                 </p>
-                <h2 className="mt-4 text-3xl font-semibold">
+                <h2 className="mt-4 text-xl sm:text-2xl lg:text-3xl font-semibold">
                   A complete Product as a package, ready to launch.
                 </h2>
                 <p className="mt-4 text-sm text-[var(--muted)]">
@@ -421,7 +421,7 @@ export default function Home() {
                 <p className="text-xs uppercase tracking-[0.2em] text-[var(--canvas)]/70">
                   Book your sprint
                 </p>
-                <h3 className="mt-4 text-3xl font-semibold">
+                <h3 className="mt-4 text-xl sm:text-2xl lg:text-3xl font-semibold">
                   Get a shipped MVP in 15 days.
                 </h3>
                 <p className="mt-4 text-sm text-[var(--canvas)]/70">
@@ -446,7 +446,7 @@ export default function Home() {
                 <span className="inline-flex items-center rounded-full border border-[var(--line)] bg-white px-3 py-1 text-xs font-semibold text-[var(--muted)]">
                   FAQs.
                 </span>
-                <h2 className="mt-4 text-3xl font-semibold">
+                <h2 className="mt-4 text-xl sm:text-2xl lg:text-3xl font-semibold">
                   Common questions
                 </h2>
                 <p className="mt-2 text-sm text-[var(--muted)]">

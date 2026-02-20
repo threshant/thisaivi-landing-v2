@@ -228,7 +228,7 @@ const ImageShuffleGame = ({ imageSrc }: { imageSrc: string }) => {
     return nearestPosition;
   };
 
-  const handleMouseMove = (e: MouseEvent) => {
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     if (draggedPosition === null || !containerRef) return;
 
     const nearest = getNearestPosition(e.clientX, e.clientY);
