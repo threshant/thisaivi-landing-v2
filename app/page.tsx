@@ -1,7 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
+<<<<<<< HEAD
 import ImageShuffleGame from "./components/ImageShuffleGame";
+=======
+import { TypeAnimation } from "react-type-animation";
+>>>>>>> 4c32d8be2930e80df79e5ea434bd3630a4468800
 import RecentWorksMarquee from "./components/RecentWorksMarquee";
 import ScrollReveal from "./components/ScrollReveal";
 
@@ -33,12 +37,12 @@ const ServiceArt = ({ name }: { name: string }) => {
           alt="Branding service"
         />
       );
-    case "Landing site development":
+    case "Website development":
       return (
         <img
           className={artClassName}
-          src="/services/landing.svg"
-          alt="Landing site service"
+          src="/services/website.svg"
+          alt="Website development service"
         />
       );
     default:
@@ -55,7 +59,7 @@ export default function Home() {
     };
 
     const handleLeave = () => {
-      setCursor((prev) => ({ ...prev, visible: false }));
+      setCursor((prev: typeof cursor) => ({ ...prev, visible: false }));
     };
 
     window.addEventListener("mousemove", handleMove);
@@ -88,11 +92,11 @@ export default function Home() {
             />
           </div>
           <nav className="hidden items-center gap-8 text-sm text-[var(--muted)] md:flex">
-            <a
+           <a
               className="transition-colors hover:text-[var(--ink)]"
-              href="#agents"
+              href="#about"
             >
-              Agents
+              About
             </a>
             <a
               className="transition-colors hover:text-[var(--ink)]"
@@ -100,23 +104,21 @@ export default function Home() {
             >
               Workflow
             </a>
+             <a
+              className="transition-colors hover:text-[var(--ink)]"
+              href="#agents"
+            >
+              Agents
+            </a>
             <a
               className="transition-colors hover:text-[var(--ink)]"
               href="#pricing"
             >
               Pricing
             </a>
-            <a
-              className="transition-colors hover:text-[var(--ink)]"
-              href="#about"
-            >
-              About
-            </a>
           </nav>
           <div className="flex items-center gap-3">
-            <button className="hidden rounded-full border border-[var(--line)] px-4 py-2 text-sm text-[var(--ink)] transition hover:border-[var(--ink)] sm:inline-flex">
-              Log in
-            </button>
+           
             <button className="rounded-full bg-[var(--ink)] px-4 py-2 text-sm font-semibold text-[var(--canvas)] transition hover:translate-y-[-1px]">
               Get started
             </button>
@@ -128,18 +130,17 @@ export default function Home() {
             <ScrollReveal>
               <div className="mx-auto flex max-w-3xl flex-col items-center">
                 <span className="inline-flex items-center gap-2 rounded-full border border-[var(--line)] bg-[var(--card)] px-4 py-1 text-xs font-semibold text-[var(--muted)]">
-                  New
+                  Production-grade software 10x faster:
                   <span className="text-[var(--ink)]">
-                    15-day MVP sprints for startups
+                    Building MVPs the better way.
                   </span>
                 </span>
                 <h1 className="mt-6 text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">
-                  Lightspeed MVPs that get to market fast.
+                 Launching <span className="text-[var(--accent)] italic flare-underline">Lightspeed MVPs</span> into Markets Faster & Bolder.
                 </h1>
                 <p className="mt-6 max-w-2xl text-base leading-7 text-[var(--muted)]">
-                  Thisaivi designs, builds, and ships production-ready MVPs in
-                  15 days. Focused scope, rapid delivery, and a launch plan that
-                  keeps momentum high.
+                  We ship Focused scope, Rapid delivery, and a Launch plan that
+                  keeps your momentum high.
                 </p>
                 <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
                   <a
@@ -153,7 +154,7 @@ export default function Home() {
                   </button>
                 </div>
                 <p className="mt-4 text-xs text-[var(--muted)]">
-                  Delivery in 15 days. Design, build, and launch included.
+                  Delivery in 15 days. Design, Build, and Launch included.
                 </p>
               </div>
             </ScrollReveal>
@@ -165,16 +166,27 @@ export default function Home() {
                 <div className="grid gap-8 md:grid-cols-2 md:items-center">
                   <div className="max-w-3xl">
                     <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">
-                      Built for founders and teams
+                      Built for Founders and Makers who need to move fast.
                     </p>
-                    <h2 className="mt-4 text-3xl font-semibold leading-tight sm:text-4xl">
-                      Thisaivi helps you ship MVPs faster and grow your launch
-                      momentum.
+                    <h2 className="mt-4 text-[3rem] font-semibold leading-tight">
+                      A Venture Studio Helping You<br></br><TypeAnimation
+                        sequence={[
+                          "Build",
+                          2000,
+                          "Launch",
+                          2000,
+                          "Scale",
+                          2000,
+                        ]}
+                        wrapper="span"
+                        cursor={true}
+                        repeat={Infinity}
+                        style={{ display: "inline-block", color: "var(--accent)", fontSize: "3rem" }}
+                      />  
+                      
                     </h2>
-                    <p className="mt-4 text-sm text-[var(--muted)]">
-                      Whether you are validating a new idea or accelerating a
-                      roadmap, we keep delivery tight with a 15-day timeline and
-                      weekly demos.
+                    <p className="mt-4 text-md text-[var(--muted)]">
+                      No Long Timelines, No Scope Creep, Just a tight process that gets your MVP out the door in 15 days.
                     </p>
                   </div>
                   <div className="hidden md:flex md:justify-center md:items-center">
@@ -225,19 +237,19 @@ export default function Home() {
             <div className="mt-10 flex flex-col gap-6 pb-24">
               {[
                 {
-                  title: "App development",
-                  text: "Build web and mobile MVPs with scalable architecture and clean UX.",
-                },
+                  title: "Application development",
+                  text: "From idea to prototype, we build AI enabled user-friendly apps with scalable backends.",
+                  },
                 {
-                  title: "E-commerce sites",
-                  text: "Launch conversion-ready stores with payment, catalog, and ops flows.",
+                  title: "E-commerce",
+                  text: "Launch your online store with storefront, payment checkout, and ops-ready flows built in the sprint.",
                 },
                 {
                   title: "Branding",
-                  text: "Define identity, voice, and visual system that feel credible on day one.",
+                  text: "From naming to visual identity, we create brands that resonate and stand out in the market.",
                 },
                 {
-                  title: "Landing site development",
+                  title: "Website landing page development",
                   text: "Ship high-converting marketing sites with analytics and fast iteration.",
                 },
               ].map((card, index) => (
@@ -293,12 +305,12 @@ export default function Home() {
                     Process
                   </p>
                   <h2 className="mt-3 text-3xl font-semibold">
-                    From kickoff to launch in 15 days.
+                    From kickoff to Launch in 15 days.
                   </h2>
                 </div>
                 <p className="max-w-lg text-sm text-[var(--muted)]">
                   Tight scope, daily updates, and fast build cycles keep your
-                  MVP on track and ready to ship.
+                  MVP on track to launch and ready to ship.
                 </p>
               </div>
             </ScrollReveal>
@@ -310,9 +322,9 @@ export default function Home() {
                   {
                     title: "Research",
                     items: [
-                      "Business goals",
+                      "Market analysis and Brand positioning",
                       "Stakeholder interviews",
-                      "Competitive scan",
+                      "Competitive audit",
                       "User insights",
                     ],
                   },
@@ -329,15 +341,15 @@ export default function Home() {
                     title: "Build",
                     items: [
                       "Sprint planning",
-                      "Engineering build",
-                      "QA + polish",
-                      "Launch prep",
+                      "Development",
+                      "Internal reviews",
+                      "Launch preparation",
                     ],
                   },
                   {
                     title: "Deliver",
                     items: [
-                      "Handoff docs",
+                      "Handoff documents",
                       "Deployment",
                       "QA feedback",
                       "Growth check-ins",
@@ -377,15 +389,16 @@ export default function Home() {
                   Deliverables
                 </p>
                 <h2 className="mt-4 text-3xl font-semibold">
-                  A complete MVP package, ready to launch.
+                  A complete Product as a package, ready to launch.
                 </h2>
                 <p className="mt-4 text-sm text-[var(--muted)]">
-                  We handle product, design, and engineering so you can focus on
+                  We handle product, design, and prototype engineering so you can focus on
                   validation and growth.
                 </p>
                 <div className="mt-6 grid gap-4 sm:grid-cols-2">
                   {[
                     "Product strategy",
+                    "AI-powered prototypes",
                     "UX/UI design",
                     "Full-stack build",
                     "Analytics setup",
@@ -407,7 +420,7 @@ export default function Home() {
                   Get a shipped MVP in 15 days.
                 </h3>
                 <p className="mt-4 text-sm text-[var(--canvas)]/70">
-                  Fixed timeline, focused scope, and weekly demos.
+                  Fixed timeline, Focused scope, and Streamlined delivery.
                 </p>
                 <a
                   href="https://cal.com/giri-prasath-r/30min"
@@ -426,7 +439,7 @@ export default function Home() {
             <div className="rounded-3xl border border-[var(--line)] bg-[var(--card)] px-6 py-10 md:px-10">
               <div className="max-w-2xl">
                 <span className="inline-flex items-center rounded-full border border-[var(--line)] bg-white px-3 py-1 text-xs font-semibold text-[var(--muted)]">
-                  FAQ
+                  FAQs.
                 </span>
                 <h2 className="mt-4 text-3xl font-semibold">
                   Common questions
@@ -439,11 +452,15 @@ export default function Home() {
                 {[
                   {
                     q: "What do you need to start?",
-                    a: "A clear goal, target users, and any existing assets. We handle the rest in the kickoff call.",
+                    a: "A clear goal, Target users, and any existing assets. We handle the rest in the kickoff call.",
                   },
                   {
                     q: "Is 15 days realistic for an MVP?",
                     a: "Yes, with a focused scope. We define must-have features on day one and ship quickly.",
+                  },
+                  {
+                    q: "What is an MVP Exactly?",
+                    a: "A Minimum Viable Product (MVP) is a simplified version of your product that includes only the essential features needed to validate your idea and gather user feedback.",
                   },
                   {
                     q: "Do you handle branding and landing pages?",
