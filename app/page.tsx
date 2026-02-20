@@ -143,12 +143,14 @@ export default function Home() {
                   keeps your momentum high.
                 </p>
                 <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-                  <a
-                    href="https://cal.com/giri-prasath-r/30min"
-                    className="inline-flex rounded-full bg-[var(--accent)] px-6 py-3 text-sm font-semibold text-white transition hover:translate-y-[-1px]"
+                  <button
+                    data-cal-link="thisaivi/15min"
+                    data-cal-namespace="15min"
+                    data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
+                    className="inline-flex rounded-full bg-[var(--accent)] px-6 py-3 text-sm font-semibold text-white transition hover:translate-y-[-1px] cursor-pointer"
                   >
                     Book a kickoff call
-                  </a>
+                  </button>
                   <button className="rounded-full border border-[var(--line)] px-6 py-3 text-sm font-semibold text-[var(--ink)] transition hover:border-[var(--ink)]">
                     See the process
                   </button>
@@ -427,12 +429,14 @@ export default function Home() {
                 <p className="mt-4 text-sm text-[var(--canvas)]/70">
                   Fixed timeline, Focused scope, and Streamlined delivery.
                 </p>
-                <a
-                  href="https://cal.com/giri-prasath-r/30min"
-                  className="mt-6 inline-flex rounded-full bg-[var(--accent)] px-6 py-3 text-sm font-semibold text-white transition hover:translate-y-[-1px]"
+                <button
+                  data-cal-link="thisaivi/15min"
+                  data-cal-namespace="15min"
+                  data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
+                  className="mt-6 inline-flex rounded-full bg-[var(--accent)] px-6 py-3 text-sm font-semibold text-white transition hover:translate-y-[-1px] cursor-pointer"
                 >
                   Start your MVP sprint
-                </a>
+                </button>
                 <div className="mt-8 border-t border-white/20 pt-6 text-xs text-[var(--canvas)]/70">
                   Delivery in 15 days. Flexible add-ons available.
                 </div>
