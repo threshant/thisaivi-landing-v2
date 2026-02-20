@@ -32,12 +32,12 @@ const ServiceArt = ({ name }: { name: string }) => {
           alt="Branding service"
         />
       );
-    case "Landing site development":
+    case "Website development":
       return (
         <img
           className={artClassName}
-          src="/services/landing.svg"
-          alt="Landing site service"
+          src="/services/website.svg"
+          alt="Website development service"
         />
       );
     default:
@@ -133,11 +133,10 @@ export default function Home() {
                   </span>
                 </span>
                 <h1 className="mt-6 text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">
-                  Lightspeed MVPs that get to market fast.
+                  Lightspeed Products that get to market fast.
                 </h1>
                 <p className="mt-6 max-w-2xl text-base leading-7 text-[var(--muted)]">
-                  Thisaivi designs, builds, and ships production-ready MVPs in
-                  15 days. Focused scope, rapid delivery, and a launch plan that
+                  Focused scope, rapid delivery, and a launch plan that
                   keeps momentum high.
                 </p>
                 <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
@@ -167,8 +166,7 @@ export default function Home() {
                       Built for founders and teams
                     </p>
                     <h2 className="mt-4 text-3xl font-semibold leading-tight sm:text-4xl">
-                      Thisaivi helps you ship MVPs faster and grow your launch
-                      momentum.
+                      A Venture Studio helping you build, launch, and Scale.
                     </h2>
                     <p className="mt-4 text-sm text-[var(--muted)]">
                       Whether you are validating a new idea or accelerating a
@@ -228,19 +226,19 @@ export default function Home() {
             <div className="mt-10 flex flex-col gap-6 pb-24">
               {[
                 {
-                  title: "App development",
-                  text: "Build web and mobile MVPs with scalable architecture and clean UX.",
-                },
+                  title: "Application development",
+                  text: "From idea to prototype, we build user-friendly apps with scalable backends.",
+                  },
                 {
-                  title: "E-commerce sites",
-                  text: "Launch conversion-ready stores with payment, catalog, and ops flows.",
+                  title: "E-commerce",
+                  text: "Launch your online store with storefront, payment checkout, and ops-ready flows built in the sprint.",
                 },
                 {
                   title: "Branding",
-                  text: "Define identity, voice, and visual system that feel credible on day one.",
+                  text: "From naming to visual identity, we create brands that resonate and stand out in the market.",
                 },
                 {
-                  title: "Landing site development",
+                  title: "Website landing page development",
                   text: "Ship high-converting marketing sites with analytics and fast iteration.",
                 },
               ].map((card, index) => (
@@ -301,7 +299,7 @@ export default function Home() {
                 </div>
                 <p className="max-w-lg text-sm text-[var(--muted)]">
                   Tight scope, daily updates, and fast build cycles keep your
-                  MVP on track and ready to ship.
+                  MVP on track to launch and ready to ship.
                 </p>
               </div>
             </ScrollReveal>
@@ -313,9 +311,9 @@ export default function Home() {
                   {
                     title: "Research",
                     items: [
-                      "Business goals",
+                      "Market analysis and Brand positioning",
                       "Stakeholder interviews",
-                      "Competitive scan",
+                      "Competitive audit",
                       "User insights",
                     ],
                   },
@@ -332,15 +330,15 @@ export default function Home() {
                     title: "Build",
                     items: [
                       "Sprint planning",
-                      "Engineering build",
-                      "QA + polish",
-                      "Launch prep",
+                      "Development",
+                      "Internal reviews",
+                      "Launch preparation",
                     ],
                   },
                   {
                     title: "Deliver",
                     items: [
-                      "Handoff docs",
+                      "Handoff documents",
                       "Deployment",
                       "QA feedback",
                       "Growth check-ins",
@@ -380,10 +378,10 @@ export default function Home() {
                   Deliverables
                 </p>
                 <h2 className="mt-4 text-3xl font-semibold">
-                  A complete MVP package, ready to launch.
+                  A complete Product as a package, ready to launch.
                 </h2>
                 <p className="mt-4 text-sm text-[var(--muted)]">
-                  We handle product, design, and engineering so you can focus on
+                  We handle product, design, and prototype engineering so you can focus on
                   validation and growth.
                 </p>
                 <div className="mt-6 grid gap-4 sm:grid-cols-2">
@@ -448,6 +446,10 @@ export default function Home() {
                     q: "Is 15 days realistic for an MVP?",
                     a: "Yes, with a focused scope. We define must-have features on day one and ship quickly.",
                   },
+                  {
+                    q: "What is an MVP Exactly?",
+                    a: "A Minimum Viable Product (MVP) is a simplified version of your product that includes only the essential features needed to validate your idea and gather user feedback.",
+                  }
                   {
                     q: "Do you handle branding and landing pages?",
                     a: "Yes. Branding, landing site development, and product UI are included in our sprints.",

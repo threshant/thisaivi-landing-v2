@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Thisaivi",
-  description: "Autonomous sales execution platform landing page.",
+  description: "Decode.Build.Disrupt.",
   icons: {
     icon: "/icon.png",
   },
