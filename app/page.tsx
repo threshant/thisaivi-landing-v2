@@ -1,11 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-<<<<<<< HEAD
-import ImageShuffleGame from "./components/ImageShuffleGame";
-=======
 import { TypeAnimation } from "react-type-animation";
->>>>>>> 4c32d8be2930e80df79e5ea434bd3630a4468800
+import ImageShuffleGame from "./components/ImageShuffleGame";
 import RecentWorksMarquee from "./components/RecentWorksMarquee";
 import ScrollReveal from "./components/ScrollReveal";
 
@@ -92,7 +89,7 @@ export default function Home() {
             />
           </div>
           <nav className="hidden items-center gap-8 text-sm text-[var(--muted)] md:flex">
-           <a
+            <a
               className="transition-colors hover:text-[var(--ink)]"
               href="#about"
             >
@@ -104,7 +101,7 @@ export default function Home() {
             >
               Workflow
             </a>
-             <a
+            <a
               className="transition-colors hover:text-[var(--ink)]"
               href="#agents"
             >
@@ -118,7 +115,6 @@ export default function Home() {
             </a>
           </nav>
           <div className="flex items-center gap-3">
-           
             <button className="rounded-full bg-[var(--ink)] px-4 py-2 text-sm font-semibold text-[var(--canvas)] transition hover:translate-y-[-1px]">
               Get started
             </button>
@@ -136,7 +132,11 @@ export default function Home() {
                   </span>
                 </span>
                 <h1 className="mt-6 text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">
-                 Launching <span className="text-[var(--accent)] italic flare-underline">Lightspeed MVPs</span> into Markets Faster & Bolder.
+                  Launching{" "}
+                  <span className="text-[var(--accent)] italic flare-underline">
+                    Lightspeed MVPs
+                  </span>{" "}
+                  into Markets Faster & Bolder.
                 </h1>
                 <p className="mt-6 max-w-2xl text-base leading-7 text-[var(--muted)]">
                   We ship Focused scope, Rapid delivery, and a Launch plan that
@@ -169,7 +169,8 @@ export default function Home() {
                       Built for Founders and Makers who need to move fast.
                     </p>
                     <h2 className="mt-4 text-[3rem] font-semibold leading-tight">
-                      A Venture Studio Helping You<br></br><TypeAnimation
+                      A Venture Studio Helping You<br></br>
+                      <TypeAnimation
                         sequence={[
                           "Build",
                           2000,
@@ -181,12 +182,16 @@ export default function Home() {
                         wrapper="span"
                         cursor={true}
                         repeat={Infinity}
-                        style={{ display: "inline-block", color: "var(--accent)", fontSize: "3rem" }}
-                      />  
-                      
+                        style={{
+                          display: "inline-block",
+                          color: "var(--accent)",
+                          fontSize: "3rem",
+                        }}
+                      />
                     </h2>
                     <p className="mt-4 text-md text-[var(--muted)]">
-                      No Long Timelines, No Scope Creep, Just a tight process that gets your MVP out the door in 15 days.
+                      No Long Timelines, No Scope Creep, Just a tight process
+                      that gets your MVP out the door in 15 days.
                     </p>
                   </div>
                   <div className="hidden md:flex md:justify-center md:items-center">
@@ -239,7 +244,7 @@ export default function Home() {
                 {
                   title: "Application development",
                   text: "From idea to prototype, we build AI enabled user-friendly apps with scalable backends.",
-                  },
+                },
                 {
                   title: "E-commerce",
                   text: "Launch your online store with storefront, payment checkout, and ops-ready flows built in the sprint.",
@@ -392,8 +397,8 @@ export default function Home() {
                   A complete Product as a package, ready to launch.
                 </h2>
                 <p className="mt-4 text-sm text-[var(--muted)]">
-                  We handle product, design, and prototype engineering so you can focus on
-                  validation and growth.
+                  We handle product, design, and prototype engineering so you
+                  can focus on validation and growth.
                 </p>
                 <div className="mt-6 grid gap-4 sm:grid-cols-2">
                   {[
