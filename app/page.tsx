@@ -54,7 +54,7 @@ export default function Home() {
     };
 
     const handleLeave = () => {
-      setCursor((prev) => ({ ...prev, visible: false }));
+      setCursor((prev: typeof cursor) => ({ ...prev, visible: false }));
     };
 
     window.addEventListener("mousemove", handleMove);
@@ -449,7 +449,7 @@ export default function Home() {
                   {
                     q: "What is an MVP Exactly?",
                     a: "A Minimum Viable Product (MVP) is a simplified version of your product that includes only the essential features needed to validate your idea and gather user feedback.",
-                  }
+                  },
                   {
                     q: "Do you handle branding and landing pages?",
                     a: "Yes. Branding, landing site development, and product UI are included in our sprints.",
