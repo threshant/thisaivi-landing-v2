@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
+import ImageShuffleGame from "./components/ImageShuffleGame";
 import RecentWorksMarquee from "./components/RecentWorksMarquee";
 import ScrollReveal from "./components/ScrollReveal";
 
@@ -88,7 +89,7 @@ export default function Home() {
             />
           </div>
           <nav className="hidden items-center gap-8 text-sm text-[var(--muted)] md:flex">
-           <a
+            <a
               className="transition-colors hover:text-[var(--ink)]"
               href="#about"
             >
@@ -100,7 +101,7 @@ export default function Home() {
             >
               Workflow
             </a>
-             <a
+            <a
               className="transition-colors hover:text-[var(--ink)]"
               href="#agents"
             >
@@ -114,7 +115,6 @@ export default function Home() {
             </a>
           </nav>
           <div className="flex items-center gap-3">
-           
             <button className="rounded-full bg-[var(--ink)] px-4 py-2 text-sm font-semibold text-[var(--canvas)] transition hover:translate-y-[-1px]">
               Get started
             </button>
@@ -132,19 +132,25 @@ export default function Home() {
                   </span>
                 </span>
                 <h1 className="mt-6 text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">
-                 Launching <span className="text-[var(--accent)] italic flare-underline">Lightspeed MVPs</span> into Markets Faster & Bolder.
+                  {" "}
+                  <span className="text-[var(--accent)] italic flare-underline">
+                    Lightspeed MVPs
+                  </span>{" "}
+                  into Markets Faster & Bolder.
                 </h1>
                 <p className="mt-6 max-w-2xl text-base leading-7 text-[var(--muted)]">
                   We ship Focused scope, Rapid delivery, and a Launch plan that
                   keeps your momentum high.
                 </p>
                 <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-                  <a
-                    href="https://cal.com/giri-prasath-r/30min"
-                    className="inline-flex rounded-full bg-[var(--accent)] px-6 py-3 text-sm font-semibold text-white transition hover:translate-y-[-1px]"
+                  <button
+                    data-cal-link="thisaivi/15min"
+                    data-cal-namespace="15min"
+                    data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
+                    className="inline-flex rounded-full bg-[var(--accent)] px-6 py-3 text-sm font-semibold text-white transition hover:translate-y-[-1px] cursor-pointer"
                   >
                     Book a kickoff call
-                  </a>
+                  </button>
                   <button className="rounded-full border border-[var(--line)] px-6 py-3 text-sm font-semibold text-[var(--ink)] transition hover:border-[var(--ink)]">
                     See the process
                   </button>
@@ -164,8 +170,9 @@ export default function Home() {
                     <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">
                       Built for Founders and Makers who need to move fast.
                     </p>
-                    <h2 className="mt-4 text-[3rem] font-semibold leading-tight">
-                      A Venture Studio Helping You<br></br><TypeAnimation
+                    <h2 className="mt-4 text-2xl sm:text-3xl lg:text-[3rem] font-semibold leading-tight">
+                      A Venture Studio Helping You<br></br>
+                      <TypeAnimation
                         sequence={[
                           "Build",
                           2000,
@@ -177,20 +184,20 @@ export default function Home() {
                         wrapper="span"
                         cursor={true}
                         repeat={Infinity}
-                        style={{ display: "inline-block", color: "var(--accent)", fontSize: "3rem" }}
-                      />  
-                      
+                        style={{
+                          display: "inline-block",
+                          color: "var(--accent)",
+                          fontSize: "clamp(1.5rem, 8vw, 3rem)",
+                        }}
+                      />
                     </h2>
-                    <p className="mt-4 text-md text-[var(--muted)]">
-                      No Long Timelines, No Scope Creep, Just a tight process that gets your MVP out the door in 15 days.
+                    <p className="mt-4 text-sm sm:text-base lg:text-lg text-[var(--muted)]">
+                      No Long Timelines, No Scope Creep, Just a tight process
+                      that gets your MVP out the door in 15 days.
                     </p>
                   </div>
-                  <div className="hidden md:flex md:justify-end">
-                    <img
-                      src="/hero.png"
-                      alt="The MVP process"
-                      className="rounded-2xl object-cover"
-                    />
+                  <div className="hidden md:flex md:justify-center md:items-center">
+                    <ImageShuffleGame imageSrc="/hero.png" />
                   </div>
                 </div>
                 <div className="mt-10 grid gap-8 md:grid-cols-3">
@@ -224,7 +231,7 @@ export default function Home() {
                   <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">
                     Services
                   </p>
-                  <h2 className="mt-3 text-3xl font-semibold">
+                  <h2 className="mt-3 text-xl sm:text-2xl lg:text-3xl font-semibold">
                     Everything you need to launch fast.
                   </h2>
                 </div>
@@ -239,7 +246,7 @@ export default function Home() {
                 {
                   title: "Application development",
                   text: "From idea to prototype, we build AI enabled user-friendly apps with scalable backends.",
-                  },
+                },
                 {
                   title: "E-commerce",
                   text: "Launch your online store with storefront, payment checkout, and ops-ready flows built in the sprint.",
@@ -282,7 +289,7 @@ export default function Home() {
                   <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">
                     Recent work
                   </p>
-                  <h2 className="mt-3 text-3xl font-semibold">
+                  <h2 className="mt-3 text-xl sm:text-2xl lg:text-3xl font-semibold">
                     Fresh MVPs shipped in 15 days.
                   </h2>
                 </div>
@@ -304,7 +311,7 @@ export default function Home() {
                   <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">
                     Process
                   </p>
-                  <h2 className="mt-3 text-3xl font-semibold">
+                  <h2 className="mt-3 text-xl sm:text-2xl lg:text-3xl font-semibold">
                     From kickoff to Launch in 15 days.
                   </h2>
                 </div>
@@ -388,12 +395,12 @@ export default function Home() {
                 <p className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]">
                   Deliverables
                 </p>
-                <h2 className="mt-4 text-3xl font-semibold">
+                <h2 className="mt-4 text-xl sm:text-2xl lg:text-3xl font-semibold">
                   A complete Product as a package, ready to launch.
                 </h2>
                 <p className="mt-4 text-sm text-[var(--muted)]">
-                  We handle product, design, and prototype engineering so you can focus on
-                  validation and growth.
+                  We handle product, design, and prototype engineering so you
+                  can focus on validation and growth.
                 </p>
                 <div className="mt-6 grid gap-4 sm:grid-cols-2">
                   {[
@@ -416,18 +423,20 @@ export default function Home() {
                 <p className="text-xs uppercase tracking-[0.2em] text-[var(--canvas)]/70">
                   Book your sprint
                 </p>
-                <h3 className="mt-4 text-3xl font-semibold">
+                <h3 className="mt-4 text-xl sm:text-2xl lg:text-3xl font-semibold">
                   Get a shipped MVP in 15 days.
                 </h3>
                 <p className="mt-4 text-sm text-[var(--canvas)]/70">
                   Fixed timeline, Focused scope, and Streamlined delivery.
                 </p>
-                <a
-                  href="https://cal.com/giri-prasath-r/30min"
-                  className="mt-6 inline-flex rounded-full bg-[var(--accent)] px-6 py-3 text-sm font-semibold text-white transition hover:translate-y-[-1px]"
+                <button
+                  data-cal-link="thisaivi/15min"
+                  data-cal-namespace="15min"
+                  data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
+                  className="mt-6 inline-flex rounded-full bg-[var(--accent)] px-6 py-3 text-sm font-semibold text-white transition hover:translate-y-[-1px] cursor-pointer"
                 >
                   Start your MVP sprint
-                </a>
+                </button>
                 <div className="mt-8 border-t border-white/20 pt-6 text-xs text-[var(--canvas)]/70">
                   Delivery in 15 days. Flexible add-ons available.
                 </div>
@@ -441,7 +450,7 @@ export default function Home() {
                 <span className="inline-flex items-center rounded-full border border-[var(--line)] bg-white px-3 py-1 text-xs font-semibold text-[var(--muted)]">
                   FAQs.
                 </span>
-                <h2 className="mt-4 text-3xl font-semibold">
+                <h2 className="mt-4 text-xl sm:text-2xl lg:text-3xl font-semibold">
                   Common questions
                 </h2>
                 <p className="mt-2 text-sm text-[var(--muted)]">
@@ -499,34 +508,37 @@ export default function Home() {
         <div className="mx-auto flex w-full max-w-6xl flex-col gap-6 px-6 py-10 md:flex-row md:items-center md:justify-between">
           <div>
             <p className="text-sm font-semibold">Thisaivi</p>
-            <p className="mt-2 text-xs text-[var(--muted)]">
-              Lightspeed MVPs for startups. Delivered in 15 days.
+
+            <p className=" text-xs text-[var(--muted)]">
+              A unit of{" "}
+              <a
+                href="https://aviontive.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-colors hover:text-[var(--ink)]"
+              >
+                Aviontive LLP
+              </a>
             </p>
           </div>
           <div className="flex flex-wrap gap-6 text-xs text-[var(--muted)]">
             <a
               className="transition-colors hover:text-[var(--ink)]"
-              href="#agents"
+              href="https://twitter.com/thisaivi"
             >
-              Agents
+              Instagram
             </a>
             <a
               className="transition-colors hover:text-[var(--ink)]"
-              href="#workflow"
+              href="https://www.linkedin.com/company/thisaivi-studio/"
             >
-              Workflow
+              Linkedin
             </a>
-            <a
-              className="transition-colors hover:text-[var(--ink)]"
-              href="#pricing"
-            >
-              Pricing
+            <a className="transition-colors hover:text-[var(--ink)]" href="#">
+              Careers
             </a>
-            <a
-              className="transition-colors hover:text-[var(--ink)]"
-              href="#about"
-            >
-              About
+            <a className="transition-colors hover:text-[var(--ink)]" href="#">
+              Terms
             </a>
           </div>
         </div>
