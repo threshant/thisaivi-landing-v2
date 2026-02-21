@@ -9,7 +9,7 @@ const ServiceArt = ({ name }: { name: string }) => {
   const artClassName = "h-20 w-20";
 
   switch (name) {
-    case "App development":
+    case "Application development":
       return (
         <img
           className={artClassName}
@@ -17,7 +17,7 @@ const ServiceArt = ({ name }: { name: string }) => {
           alt="App development service"
         />
       );
-    case "E-commerce sites":
+    case "E-commerce":
       return (
         <img
           className={artClassName}
@@ -33,11 +33,11 @@ const ServiceArt = ({ name }: { name: string }) => {
           alt="Branding service"
         />
       );
-    case "Website development":
+    case "Website landing page development":
       return (
         <img
           className={artClassName}
-          src="/services/website.svg"
+          src="/services/landing.svg"
           alt="Website development service"
         />
       );
